@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    background-color: gray;
+}
+header{
+    text-align: center;
+    font-size: larger;
+    color: rgb(0, 0, 0);
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+#container{
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: white;
+    padding: 5px;
+}
+/*Need to revisit image*/
+#image{
+    width: 100%;
+    height: 400px;
+    max-width: 100%;
+    background-color: gray;
+}
+footer{
+    text-align: center;
+    background-color:rgb(47, 103, 103);
+    padding: 10px;
+}
+p{
+    line-height: 1.6;
+    text-indent: 40px;
+}
+
+
+/*
+
+width: 100%; -> fills available width
+height: auto; -> keeps the propertions of the image.
+max-width: 100%; -> Image stays inside container
+
+body margin:0; -> to remove the thin gap around footer
+
+ShortHand For Margin:
+margin-left: 100px;
+margin-right: 100px;
+write this instead:
+margin: 0 100px;
+
+margin: top-bottom left-right;
+
+*/
