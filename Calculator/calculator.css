@@ -1,15 +1,18 @@
 #calculator{
-    border: 2px solid blue;
+    border: 2px solid rgb(6, 6, 93);
     border-radius: 5px;
     width: 200px;
     padding: 10px;
     margin: 30px auto;  /*top-bottom left-right*/ /* ref. comment*/
+    background-color: rgb(162, 239, 123);
 }
 
 #display{
+    border: 1px solid rgb(80, 121, 40);
     margin: 10px 10px;
     width: 85%;
     height: 50px;
+    
 }
 
 .button,.buttonX{
