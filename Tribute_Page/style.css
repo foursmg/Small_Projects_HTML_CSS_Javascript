@@ -5,9 +5,12 @@ body{
 header{
     text-align: center;
     font-size: larger;
-    color: rgb(0, 0, 0);
+    color: white;
     font-family:'Courier New', Courier, monospace;
-    font-weight: bold;
+    font-weight:bolder;
+    background-color: black;
+    padding: 10px;
+    
 }
 #container{
     margin-left: 100px;
@@ -30,6 +33,9 @@ footer{
 p{
     line-height: 1.6;
     text-indent: 40px;
+}
+ul{
+    line-height: 1.6;
 }
 
 

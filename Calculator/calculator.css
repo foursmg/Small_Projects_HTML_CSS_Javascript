@@ -1,0 +1,49 @@
+#calculator{
+    border: 2px solid blue;
+    border-radius: 5px;
+    width: 200px;
+    padding: 10px;
+    margin: 30px auto;  /*top-bottom left-right*/ /* ref. comment*/
+}
+
+#display{
+    margin: 10px 10px;
+    width: 85%;
+    height: 50px;
+}
+
+.button,.buttonX{
+    margin: 4px;
+    font-size: xx-large;
+    width: 50px;
+    height: 40px;
+    
+}
+
+.buttonX{
+    display: flex;
+    align-items: center;   /*  Moves the item vertically: center in this case */
+}
+
+.buttonC{
+    display: flex;
+    justify-content: center; /* Moves the boxes to center - Horizontally */
+    flex-wrap: wrap;       /*Controls wrapping of items*/
+
+}
+
+/*
+
+1. to center the calculator, used method-> margin: auto;
+   if the calculator has a fixed width
+   margin: 0 auto;
+   auto tells the browser to split the remaining space on the left and right.
+
+   Another method to center the box:
+   body {
+    display: flex;
+    justify-content: center;
+    }
+
+
+*/
