@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock Paper Scissor</title>
+        <link rel="stylesheet" href="/RockPS.css">
+    </head>
+    <body>
+        <div id="container">
+            <div id="leftboxes">
+                <button type="text" id="rock" onclick="game('rock')">🪨</button>
+                <button type="text" id="paper" onclick="game('paper')">📄</button>
+                <button type="text" id="scissor" onclick="game('scissor')">✂️</button>
+            </div>
+            
+            <div id="display">
+                <span id="userdisplay">You</span>
+                <span id="botdisplay">Bot</span>
+                <div id="wins"><span id="winsdisplay">wins</span></div>
+            </div>
+
+            
+
+            <div id="rightboxes"><button type="text" id="rock1" >🪨</button>
+                <button type="text" id="paper1">📄</button>
+                <button type="text" id="scissor1">✂️</button></div>
+            
+        </div>
+
+        
+        <script src="/RockPS.js"></script>
+    </body>
+</html>
+
+<!-- 
+<button> → inline-block-like control, sized to content.
+<p> → block element, comes with default top/bottom margins.
+<span> ->  is meant for inline text and doesn't have the large default margins that <p> has.       
+
+-->

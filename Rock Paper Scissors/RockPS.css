@@ -1,0 +1,90 @@
+
+#display{
+    display:flex; 
+    flex-direction: column;
+    align-self: flex-start;
+    margin-top: 55px; 
+    gap:10px;  
+}
+
+
+#winsdisplay{
+    font-size: 80px;
+}
+
+#container{
+    border: 5px double purple;
+    width: 650px;
+    margin: 50px auto;
+    height: 455px;
+
+    display: flex;
+    justify-content:space-between;  /*Puts space between 2 column, pushing one column to left and one to right */
+    align-items: center;
+}
+
+#rock,#paper,#scissor{
+    font-size: 80px;
+    background-color: teal;
+       /* margin: top right bottom left;  */
+}
+#rock:hover,#paper:hover,#scissor:hover{
+    filter:brightness(1.15);
+}
+
+
+#rock1,#paper1,#scissor1{
+    font-size: 80px;
+    background-color:turquoise;
+     /* margin: top right bottom left; */
+}
+
+#leftboxes{  
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    gap: 10px;
+}
+
+
+#rightboxes{
+    display:flex;
+    flex-direction: column;
+    margin-right: 10px;
+    gap: 10px;
+    pointer-events: none;
+} 
+
+ 
+#userdisplay,#botdisplay{
+    font-size: 80px;
+    pointer-events: none;
+}
+
+#userdisplay{
+    background-color: teal;
+}
+
+#botdisplay{
+    background-color: turquoise;
+}
+
+#winsdisplay{
+    background-color: greenyellow;
+    pointer-events: none;
+}
+
+
+
+/*
+
+pointer-events: none;
+It disables all mouse/touch interactions on an element.
+Cannot be clicked, Cannot be Hovered, Does not receive mouse event, JavaScript onlick won't fire from user clicks.  
+
+
+align-self: -> align-self is used on an individual flex/grid item to override the container's align-items value for that specific item.
+align-self: flex-start -> Moves the item to the start of the cross axis.
+align-self: affects vertical alignment
+
+*/
