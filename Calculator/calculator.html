@@ -1,68 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name = "viewport"  content="width=device-width, initial-scale=1.0">
-        <title>Calculator</title>
-        <link rel="stylesheet" href="/calculator.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/calculator.css" />
+  </head>
 
-    </head>
+  <body>
+    <div id="calculator">
+      <input type="text" id="display" style="font-size: 20px" readonly />
+      <div class="buttonContainer">
+        <button class="button" onclick="inputVal('C')">C</button>
+        <button class="button" onclick="inputVal('1')">1</button>
+        <button class="button" onclick="inputVal('2')">2</button>
+        <button class="button" onclick="inputVal('=')">=</button>
+        <button class="button" onclick="inputVal('3')">3</button>
+        <button class="button" onclick="inputVal('4')">4</button>
+        <button class="button" onclick="inputVal('+')">+</button>
+        <button class="button" onclick="inputVal('5')">5</button>
+        <button class="button" onclick="inputVal('6')">6</button>
+        <button class="button" onclick="inputVal('-')">-</button>
+        <button class="button" onclick="inputVal('7')">7</button>
+        <button class="button" onclick="inputVal('8')">8</button>
+        <button class="button" onclick="inputVal('*')">*</button>
+        <button class="button" onclick="inputVal('9')">9</button>
+        <button class="button" onclick="inputVal('0')">0</button>
+        <button class="button" onclick="inputVal('/')">/</button>
+        <button class="button" onclick="inputVal('.')">.</button>
+        <button class="buttonX" onclick="backspace()">⌫</button>
+      </div>
+    </div>
 
-    <body>
-
-        <div id="calculator">
-            <input type="text" id="display" style="font-size: 20px;" readonly>
-            <div class="buttonC">
-            <button class ="button" onclick="inputVal('C')">C</button>
-            <button class ="button" onclick="inputVal('1')">1</button>
-            <button class ="button" onclick="inputVal('2')">2</button>
-            <button class ="button" onclick="inputVal('=')">=</button>
-            <button class ="button" onclick="inputVal('3')">3</button>
-            <button class ="button" onclick="inputVal('4')">4</button>
-            <button class ="button" onclick="inputVal('+')">+</button>
-            <button class ="button" onclick="inputVal('5')">5</button>
-            <button class ="button" onclick="inputVal('6')">6</button>
-            <button class ="button" onclick="inputVal('-')">-</button>
-            <button class ="button" onclick="inputVal('7')">7</button>
-            <button class ="button" onclick="inputVal('8')">8</button>
-            <button class ="button" onclick="inputVal('*')">*</button>
-            <button class ="button" onclick="inputVal('9')">9</button>
-            <button class ="button" onclick="inputVal('0')">0</button>
-            <button class ="button" onclick="inputVal('/')">/</button>
-            <button class ="button" onclick="inputVal('.')">.</button>
-            <button class ="buttonX" onclick="backspace()">⌫</button>
-            </div>
-
-
-
-        </div>
-         
-
-        <script>
-        let inputvalue = '';
-function inputVal(x){
-   // let x = document.querySelectorAll('.button').value;
-    if(x!= "C" && x!="="){
-        inputvalue += x;
-    }
-    document.querySelector('#display').value = inputvalue;
-    if(x== "="){
-        document.querySelector("#display").value = inputvalue+`=`+eval(inputvalue);
-        inputvalue= eval(inputvalue);
-    }
-    if(x == "C"){
-        inputvalue= "";
-       // document.querySelector("#display").value = inputvalue;
-    }
-    document.querySelector("#display").value = inputvalue;
-}
- function backspace(){
-        inputvalue = inputvalue.slice(0,-1);
+    <!-- Js Code for the calculator working -->
+    <script>
+      let inputvalue = "";
+      function inputVal(x) {
+        if (x != "C" && x != "=") {
+          inputvalue += x;
+        }
         document.querySelector("#display").value = inputvalue;
-    }
-</script>
-    </body>
-
+        if (x == "=") {
+          document.querySelector("#display").value =
+            inputvalue + `=` + eval(inputvalue);
+          inputvalue = eval(inputvalue);
+        }
+        if (x == "C") {
+          inputvalue = "";
+          //document.querySelector("#display").value = inputvalue;  // XY.  if want to keep the expression after pressing =, keep this line uncommented
+          // And Comment out the AB
+        }
+        document.querySelector("#display").value = inputvalue; // AB.    if want to clear the expression and only show the result, keep this line uncommented
+        // And Comment out the XY
+      }
+      function backspace() {
+        inputvalue = inputvalue.slice(0, -1);
+        document.querySelector("#display").value = inputvalue;
+      }
+    </script>
+  </body>
 </html>
 
 <!-- 

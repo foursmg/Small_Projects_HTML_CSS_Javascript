@@ -1,7 +1,6 @@
 /*
 let inputvalue = '';
 function inputVal(x){
-   // let x = document.querySelectorAll('.button').value;
     if(x!= "C" && x!="="){
         inputvalue += x;
     }
@@ -15,5 +14,9 @@ function inputVal(x){
        // document.querySelector("#display").value = inputvalue;
     }
     document.querySelector("#display").value = inputvalue; // remove this if dont want to overwrite full expression
+    function backspace(){
+        inputvalue = inputvalue.slice(0,-1);
+        document.querySelector("#display").value = inputvalue;
+    }
 }
 */

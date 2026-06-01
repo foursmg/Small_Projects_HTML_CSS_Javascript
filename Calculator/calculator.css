@@ -12,6 +12,7 @@
     margin: 10px 10px;
     width: 85%;
     height: 50px;
+    border-radius: 5px;
     
 }
 
@@ -20,7 +21,13 @@
     font-size: xx-large;
     width: 50px;
     height: 40px;
+    border-radius: 10px;
     
+}
+
+/* To style the button when the pointer hover over it. */
+.button:hover,.buttonX:hover{
+    box-shadow: 0 0 6px rgb(0, 0, 0);
 }
 
 .buttonX{
@@ -28,7 +35,7 @@
     align-items: center;   /*  Moves the item vertically: center in this case */
 }
 
-.buttonC{
+.buttonContainer{
     display: flex;
     justify-content: center; /* Moves the boxes to center - Horizontally */
     flex-wrap: wrap;       /*Controls wrapping of items*/
