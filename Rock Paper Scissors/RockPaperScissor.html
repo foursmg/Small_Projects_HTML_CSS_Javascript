@@ -7,25 +7,33 @@
         <link rel="stylesheet" href="/RockPS.css">
     </head>
     <body>
+        <h1>Rock Paper Scissor</h1>
         <div id="container">
             <div id="leftboxes">
                 <button type="text" id="rock" onclick="game('rock')">🪨</button>
                 <button type="text" id="paper" onclick="game('paper')">📄</button>
                 <button type="text" id="scissor" onclick="game('scissor')">✂️</button>
+                <p id="userScore", style="margin-top: 0; margin-left: 50px;" >You: 0</p>
             </div>
             
             <div id="display">
                 <span id="userdisplay">You</span>
                 <span id="botdisplay">Bot</span>
-                <div id="wins"><span id="winsdisplay">wins</span></div>
+                <span id="winsdisplay">wins</span>
+                <div id="reset">
+                <button style="font-size: larger; margin-top: 110px;" id='rest', onclick="reset()">Rest</button>
+            </div>
             </div>
 
+            
             
 
             <div id="rightboxes"><button type="text" id="rock1" >🪨</button>
                 <button type="text" id="paper1">📄</button>
-                <button type="text" id="scissor1">✂️</button></div>
-            
+                <button type="text" id="scissor1">✂️</button>
+                <p id="botScore", style="margin-top: 0; margin-left: 40px;">Bot: 0</p> 
+            </div>
+                
         </div>
 
         

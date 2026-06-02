@@ -8,34 +8,50 @@
 }
 
 
-#winsdisplay{
-    font-size: 80px;
+
+#reset{
+    margin-bottom: 10pxs;
+    align-self: center;
 }
 
+
+
 #container{
-    border: 5px double purple;
+    border: 8px outset purple;
     width: 650px;
     margin: 50px auto;
     height: 455px;
+    border-radius: 10px;
+    background-color: rgb(212, 234, 101);
 
     display: flex;
     justify-content:space-between;  /*Puts space between 2 column, pushing one column to left and one to right */
-    align-items: center;
+    /* align-items:center; */
 }
 
 #rock,#paper,#scissor{
     font-size: 80px;
     background-color: teal;
+    margin-top: 20px;
+    cursor: pointer;
        /* margin: top right bottom left;  */
 }
+
+/* for Hover Effect */
 #rock:hover,#paper:hover,#scissor:hover{
-    filter:brightness(1.15);
+    filter:brightness(1.25);
+}
+
+/* For making button click more noticeable */
+#rock:active,#paper:active,#scissor:active{
+      transform: translateY(3px);
 }
 
 
 #rock1,#paper1,#scissor1{
     font-size: 80px;
     background-color:turquoise;
+    margin-top: 20px;
      /* margin: top right bottom left; */
 }
 
@@ -56,9 +72,13 @@
 } 
 
  
-#userdisplay,#botdisplay{
-    font-size: 80px;
-    pointer-events: none;
+#userdisplay,#botdisplay,#winsdisplay{
+    height: 73px;
+    width: 190px;
+    font-size: 50px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: cursive;
 }
 
 #userdisplay{
@@ -70,9 +90,22 @@
 }
 
 #winsdisplay{
-    background-color: greenyellow;
-    pointer-events: none;
+    background-color: rgb(143, 213, 45);
+    
 }
+
+#userScore,#botScore{
+    font-family:cursive;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(101, 19, 69);
+    text-shadow: 3px 0 2px gray;
+}
+
+
 
 
 
