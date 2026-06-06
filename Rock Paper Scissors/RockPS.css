@@ -15,11 +15,10 @@
 }
 
 
-
 #container{
     border: 8px outset purple;
     width: 650px;
-    margin: 50px auto;
+    margin: 45px auto;
     height: 455px;
     border-radius: 10px;
     background-color: rgb(212, 234, 101);
